@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>abinesh</title>
+</head>
+<body>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: 5fr 3fr;
+            grid-template-rows: 1fr 0.5fr 4fr 1fr ;
+            width: 250px;
+            height: 300px;
+            
+          
+        }
+        .container>div{
+            
+            display: flex;
+             border: 3px;
+        }
+        .head{
+          background-color:#2F2D2E;
+         grid-column: 1/3;
+         color: white;
+         justify-content: center;
+            align-items: center;
+        }
+        .nav{
+          background-color:#9B999A ;
+          grid-column: 1/3;
+          color: white;
+        }
+        .main{
+          background-color:#E0E0E0;
+          grid-column: 1/2;
+          grid-row: 3/4;
+          margin-left: 10px;
+          margin-right: 4px;
+          margin-top: 4px;
+          margin-bottom: 4px;
+          justify-content: center;
+            align-items: center;
+        }
+        .side{
+          background-color:#BCBABB ;
+          grid-column: 2/3;
+          grid-row: 3/4;
+          margin-right: 10px;
+           margin-top: 4px;
+          margin-bottom: 4px;
+          justify-content: center;
+            align-items: center;
+        }
+        .foot{
+          background-color:#555555;
+          grid-column: 1/3;
+          color: white;
+          justify-content: center;
+            align-items: center;
+        }
+        
+        </style>
+    <div class="container">
+       
+        <div class="head">Header</div>
+        <div class="nav">Navigation </div>
+        <div class="main">main content</div>
+        <div class="side">sidebar</div>
+        <div class="foot">Footer</div>
+        
+    </div>
+</body>
+</html>
