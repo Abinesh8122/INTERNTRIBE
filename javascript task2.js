@@ -1,0 +1,10 @@
+let a=20;
+let b=10;
+let sum=a+b;
+console.log( 'the sum is:',sum);
+let sub=a-b;
+console.log('the sub is: ',sub);
+let mul=a*b;
+console.log('the mul is:',mul);
+let div=a/b;
+console.log('the div is:',div);

@@ -1,0 +1,12 @@
+let a=4;
+let b=20;
+let c=a;
+console.log('c=',c);
+a+=b;
+console.log('a=',a);
+a-=b;
+console.log('a=',a);
+a*=b;
+console.log('a=',a);
+a/=b;
+console.log('a=',a);
