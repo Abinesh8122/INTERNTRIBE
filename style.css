@@ -1,235 +1,164 @@
-<style>
-      body {
-            font-family: Arial, Helvetica, sans-serif;
-        }
+ <style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
-    .container{
-      display: flex;
-      flex-direction: column;
-      width: 100vw;
-      height:300vh;
-      overflow: hidden;
-    }
-      .header{
-        display: flex;
-        width: 100%;
-        height:5%;
-      }
-      .header img{
-        width: 100px;
-        height:50px;
-      }
-      .header>div{
-        display: flex;
-      }
-      .header h4{
-        color: grey;
-      }
-      .item1{
-        width: 50%;
-        height: 100%;
-        display: flex;
-        padding-left: 50px;
-        gap: 75px;
-      }
-      .item2{
-        width: 50%;
-        height: 100%;
-        display: flex;
-        gap:50px
-      }
-      .item2 img{
-        width: 25px;
-        height: 25px;
-        margin-top: 20px;
-      }
-      .class2{
-        display: flex;
-        width: 100%;
-        height: 1%;
-        background-color: green;
-      }
-      .class3{
-        display: flex;
-        width: 100%;
-        height: 4%;
-        background-color: #474747;
-      }
-      .class3>div{
-        display: flex;
-        color: white;
-        align-items: center;
-        border-left: 2px solid grey;
-        padding-left: 2px;
-      }
-      
-       .a1{
-        display: flex;
-        width: 5%;
-        height: 100%;
-      }
-       .a2{
-        display: flex;
-        width: 7%;
-        height: 100%;
-      }
-      .a3{
-        display: flex;
-        width: 12%;
-        height: 100%;
-      }
-      .a4{
-        display: flex;
-        width: 15%;
-        height: 100%;
-      }
-      .a5{
-        display: flex;
-        width: 10%;
-        height: 100%;
-      }
-      .a6{
-        display: flex;
-        width: 7%;
-        height: 100%;
-      }
-      .a7{
-        display: flex;
-        width: 7%;
-        height: 100%;
-      }
-      .a8{
-        display: flex;
-        width: 6%;
-        height: 100%;
-      }
-      .a9{
-        display: flex;
-        width: 10%;
-        height: 100%;
-        
-      }
-      .a10{
-        display: flex;
-        width: 13%;
-        height: 100%;
-      }
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+  }
 
-      
-      .class4{
-        display: flex;
-        width: 100%;
-        height: 40%;
-        background-image: url('https://uploads.onecompiler.io/43mb3dtyv/43pjqa4e8/bike.jpeg');
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-      }
-      .class4 button{
-        width: 200px;
-        height: 50px;
-        color: white;
-        background-color:black ;
-        border: 2px solid green;
-        margin-top: 250px;
-        margin-left: 90px;
-      }
-      .class5{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-      }
-      .sub1{
-        width: 100%;
-        height: 15%;
-        display: flex;
-         }
-         .b1{
-           width: 30%;
-           height: 100%;
-           display: flex;
-           padding-left:100px;
-         }
-         .b2{
-           width: 70%;
-           height: 100%;
-           display: flex; 
-           border-bottom: 2px solid black;
-           margin-right: 100px;
-         }
-         .sub2{
-           width: 100%;
-           height: 43%;
-           display: flex;
-           margin-top: 25px;
-           justify-content: space-evenly;
-         }
-         .sub2 img{
-           width: 200px;
-           height: 150px;
-         }
-         .c1,.c2,.c3{
-           width: 20%;
-           height: 100%;
-           flex-direction: column;
-         }
-         .sub2 h4,h5{
-           margin: 0px;
-         } 
-         .sub3{
-           width: 100%;
-           height: 42%;
-           display: flex;
-           justify-content: space-evenly;
-           margin-top: 40px;
-         }
-         .sub3 img{
-           width: 200px;
-           height: 150px;
-         }
-         .e1,.e2,.e3{
-           width: 20%;
-           height: 100%;
-           flex-direction: column;
-         }
-         .sub3 h4,h5{
-           margin: 0px;
-         }
-         .sub4{
-           width: 100%;
-      		height:500px;
-           background-color:black ;
-           display: flex;
-         }
-         
-         .sub4 h2{
-           color: white;
-         }
-         .sub4 img{
-           width: 25px;
-           height:25px;
-           display:flex;
-         }
-         .d3{
-           display: flex;
-           gap: 10px;
-         }
-         .d1{
-           width: 30%;
-           height: 100%;
-           padding-left: 100px;
-         }
-         .m1{
-           width: 30%;
-           height: 100%;
-         }
-         .m1 h3{
-           color: grey;
-         }
-         .m2{
-           width: 30%;
-           height: 100%;
-         }
-         .m2 h3{
-           color: grey;
-         }
-    </style>
+  header {
+    background-color: #2e2e2e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    height: 80px;
+  }
+
+  header img {
+    height: 50px;
+  }
+
+  header ul {
+    list-style: none;
+    display: flex;
+  }
+
+  header ul li {
+    color: white;
+    margin: 0 15px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+
+  header ul li:hover {
+    color: #fa943f;
+  }
+
+  .container1 {
+    display: flex;
+    background-color: #f0f0f0;
+    padding: 80px 40px;
+  }
+
+  .container1 .left {
+    flex: 1;
+    padding-right: 40px;
+  }
+
+  .container1 .left h3 {
+    font-size: 28px;
+    color: #2e2e2e;
+  }
+
+  .container1 .left p {
+    margin: 20px 0;
+  }
+
+  .container1 .right {
+    flex: 1;
+  }
+
+  .container1 .right img {
+    width: 100%;
+    height: auto;
+  }
+
+  button {
+    background-color: #fa943f;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #f77c20;
+  }
+
+  .container2 {
+    display: flex;
+    justify-content: space-around;
+    padding: 80px 40px;
+  }
+
+  .container2 .item1,
+  .container2 .item2,
+  .container2 .item3 {
+    flex: 1;
+    max-width: 300px;
+    text-align: center;
+    margin: 0 10px;
+  }
+
+  .container2 img {
+    width: 100%;
+    height: auto;
+  }
+
+  .container3 {
+    display: flex;
+    justify-content: space-between;
+    background-color: #2e2e2e;
+    color: white;
+    padding: 60px 40px;
+  }
+
+  .latest,
+  .about,
+  .stay {
+    flex: 1;
+    padding: 0 20px;
+  }
+
+  .latest h3,
+  .about h3,
+  .stay h3 {
+    margin-bottom: 20px;
+    font-size: 22px;
+  }
+
+  .ditem1 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .ditem1 img {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+  }
+
+  .stay ol {
+    list-style: none;
+    padding: 0;
+  }
+
+  .stay ol li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+  }
+
+  .stay ol a {
+    margin-right: 10px;
+    color: white;
+    font-size: 20px;
+  }
+
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    color: white;
+  }
+  </style>
